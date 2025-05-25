@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "functions": {
+    "api/*.ts": {
+      "memory": 512,
+      "maxDuration": 10
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1.ts"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.tsx"
+    }
+  ],
+  "env": {
+    "BITGET_API_KEY": "@bitget_api_key",
+    "BITGET_API_SECRET": "@bitget_api_secret",
+    "BITGET_API_PASSPHRASE": "@bitget_api_passphrase",
+    "BOT_MODE": "@bot_mode",
+    "TRADE_THRESHOLD": "@trade_threshold"
+  },
+  "cron": [
+    {
+      "path": "/api/detect",
+      "schedule": "*/1 * * * *"
+    }
+  ]
+}
