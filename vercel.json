@@ -23,10 +23,5 @@
     "BOT_MODE": "@bot_mode",
     "TRADE_THRESHOLD": "@trade_threshold"
   },
-  "cron": [
-    {
-      "path": "/api/detect",
-      "schedule": "*/1 * * * *"
-    }
-  ]
+
 }
