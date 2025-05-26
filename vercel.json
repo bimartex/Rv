@@ -21,7 +21,8 @@
     "BITGET_API_SECRET": "@bitget_api_secret",
     "BITGET_API_PASSPHRASE": "@bitget_api_passphrase",
     "BOT_MODE": "@bot_mode",
-    "TRADE_THRESHOLD": "@trade_threshold"
-  },
-
+    "TRADE_THRESHOLD": "@trade_threshold",
+    "MAX_TRADE_USDT": "@max_trade_usdt",
+    "MAX_TRADES_PER_HOUR": "@max_trades_per_hour"
+  }
 }
