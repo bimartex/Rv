@@ -1,11 +1,5 @@
 {
   "version": 2,
-  "functions": {
-    "pages/api/**/*.ts": {
-      "memory": 512,
-      "maxDuration": 10
-    }
-  },
   "routes": [
     {
       "src": "/api/(.*)",
