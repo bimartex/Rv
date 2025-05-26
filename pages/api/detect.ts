@@ -12,7 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     res.status(500).json({ error: error.message });
   }
 }
-*/
+
 
 // pages/api/detect.ts
 import type { NextApiRequest, NextApiResponse } from 'next';
@@ -63,4 +63,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   } catch (error: any) {
     return res.status(500).json({ error: error.message });
   }
+}
+*/
+// pages/api/detect.ts
+import type { NextApiRequest, NextApiResponse } from 'next';
+
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
+  res.status(200).json({ message: 'Detect route working' });
 }
